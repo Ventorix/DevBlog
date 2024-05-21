@@ -3,5 +3,9 @@
   "about": {
     "page": "page"
   },
-  "page": "page"
+  "page": "page",
+  "page-not-found": "page-not-found",
+  "translation": {
+    "page-not-found": "page-not-found"
+  }
 }

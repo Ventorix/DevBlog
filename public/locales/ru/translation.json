@@ -1,5 +1,6 @@
 {
-	"Test Example": "Тестовый пример",
-	"Translate": "Перевод",
-	"Language": "Русский"
+  "Language": "Русский",
+  "Test Example": "Тестовый пример",
+  "Translate": "Перевод",
+  "page-not-found": "Страница не найдена"
 }
