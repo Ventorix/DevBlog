@@ -1,0 +1,22 @@
+.PageError {
+  width: 100%;
+  height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.errorTitle {
+  font: var(--font-l);
+  font-weight: 500;
+}
+
+.errorDescription {
+  font: var(--font-m);
+  color: var(--cancel);
+  font-weight: 600;
+}
