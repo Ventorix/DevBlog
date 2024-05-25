@@ -8,6 +8,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/recommended',
 		'plugin:i18next/recommended',
+		'plugin:jest-dom/recommended',
 	],
 	overrides: [
 		{
@@ -25,9 +26,10 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['@typescript-eslint', 'react', 'i18next'],
+	plugins: ['@typescript-eslint', 'react', 'i18next', 'jest-dom'],
 	rules: {
 		'i18next/no-literal-string': 2,
 		'react/react-in-jsx-scope': 0,
+		'react/display-name': 0,
 	},
 };

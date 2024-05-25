@@ -3,12 +3,14 @@
 		"outDir": "./dist/",
 		"noImplicitAny": true,
 		"module": "ESNext",
-		"target": "es5",
+		"target": "ES2017",
 		"jsx": "react-jsx",
 		"allowJs": true,
 		"moduleResolution": "node",
+		"types": ["@testing-library/jest-dom"],
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
+		"allowUmdGlobalAccess": true,
 		"baseUrl": ".",
 		"paths": {
 			"*": ["./src/*"]
@@ -18,5 +20,13 @@
 		"compilerOptions": {
 			"module": "CommonJS"
 		}
-	}
+	},
+	"include": [
+		"./config/jest/setupTests.ts",
+		"./src/**/*.ts",
+		"./src/**/*.tsx",
+		"./src/**/*.jsx",
+		"./src/**/*.js"
+	],
+	"exclude": ["node_modules"]
 }
