@@ -28,7 +28,7 @@
         border: 2px solid var(--accent);
         background-color: #f3f4f6;
         text-decoration: none;
-        transition-duration: 0.1s;
+        transition-duration: 0.3s;
         color: var(--accent);
     }
 
@@ -68,6 +68,12 @@
     &.success {
         border: 2px solid var(--save);
     }
+}
+
+.primary_outline {
+}
+
+.secondary {
 }
 
 .clear {

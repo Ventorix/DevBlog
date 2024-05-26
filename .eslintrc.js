@@ -3,13 +3,7 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
-		'plugin:react/recommended',
-		'plugin:i18next/recommended',
-		'plugin:jest-dom/recommended',
-	],
+	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'plugin:i18next/recommended', 'plugin:jest-dom/recommended', 'plugin:storybook/recommended'],
 	overrides: [
 		{
 			env: {

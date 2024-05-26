@@ -5,8 +5,6 @@ interface LoaderProps {
 	className?: string;
 }
 
-const Loader = ({ className }: LoaderProps) => {
+export const Loader = ({ className }: LoaderProps) => {
 	return <div className={classNames(cls.loader, {}, [className])}></div>;
 };
-
-export default Loader;

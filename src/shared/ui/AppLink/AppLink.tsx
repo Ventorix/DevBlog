@@ -1,14 +1,15 @@
 import { FC, ReactNode } from 'react';
-import { Link, LinkProps } from 'react-router-dom';
+import { Link, LinkProps, To } from 'react-router-dom';
 import { classNames } from 'shared/lib/classNames/classNames';
 import * as cls from './AppLink.module.scss';
 
-export type AppLinkVariant = 'primary' | 'red';
+export type AppLinkVariant = 'primary' | 'secondary' | 'red';
 
 interface AppLinkProps extends LinkProps {
 	className?: string;
 	children?: ReactNode;
 	variant?: AppLinkVariant;
+	to: To;
 }
 
 export const AppLink: FC<AppLinkProps> = (props) => {
