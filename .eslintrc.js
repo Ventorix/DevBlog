@@ -3,7 +3,14 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended', 'plugin:i18next/recommended', 'plugin:jest-dom/recommended', 'plugin:storybook/recommended'],
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:react/recommended',
+		'plugin:i18next/recommended',
+		'plugin:jest-dom/recommended',
+		'plugin:storybook/recommended',
+	],
 	overrides: [
 		{
 			env: {
@@ -25,5 +32,10 @@ module.exports = {
 		'i18next/no-literal-string': 2,
 		'react/react-in-jsx-scope': 0,
 		'react/display-name': 0,
+	},
+	settings: {
+		react: {
+			version: 'detect',
+		},
 	},
 };

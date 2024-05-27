@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
@@ -16,7 +15,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-
     appearance: none;
     background: none;
     box-shadow:
@@ -68,12 +66,6 @@
     &.success {
         border: 2px solid var(--save);
     }
-}
-
-.primary_outline {
-}
-
-.secondary {
 }
 
 .clear {

@@ -21,5 +21,6 @@ export const Light: Story = {
 };
 export const Dark: Story = {
 	args: {},
+	// @ts-expect-error Storybook bug
 	decorators: [ThemeDecorator(Theme.DARK)],
 };

@@ -17,6 +17,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Light: Story = {
+	// @ts-expect-error Storybook bug
 	args: {
 		error: {
 			message: 'Error test',
@@ -24,10 +25,12 @@ export const Light: Story = {
 	},
 };
 export const Dark: Story = {
+	// @ts-expect-error Storybook bug
 	args: {
 		error: {
 			message: 'Error test',
 		},
 	},
+	// @ts-expect-error Storybook bug
 	decorators: [ThemeDecorator(Theme.DARK)],
 };

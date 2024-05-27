@@ -1,0 +1,11 @@
+{
+	"extends": ["stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
+	"rules": {
+		"color-hex-length": null,
+		"selector-class-pattern": null,
+		"alpha-value-notation": null,
+		"color-function-notation": null,
+		"selector-pseudo-element-colon-notation": "single",
+		"custom-property-empty-line-before": null
+	}
+}
