@@ -14,6 +14,7 @@ const buildCssLoader = (isDev: boolean) => {
 					},
 				},
 			},
+			'postcss-loader',
 			'sass-loader',
 		],
 	};
