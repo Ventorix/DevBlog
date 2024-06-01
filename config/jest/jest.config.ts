@@ -10,7 +10,7 @@ const config: Config = {
 	setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
 	modulePaths: ['<rootDir>src'],
 	moduleNameMapper: {
-		'\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+		'\\.(css|scss)$': '<rootDir>config/jest/identity-obj-proxy-esm.ts',
 		'\\.svg': path.resolve(__dirname, 'StyledComponent.tsx'),
 	},
 	testEnvironment: 'jsdom',

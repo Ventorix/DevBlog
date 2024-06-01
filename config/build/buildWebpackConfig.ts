@@ -18,6 +18,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
 		},
 		plugins: buildPlugins(options),
 		module: {
+			strictExportPresence: true,
 			rules: buildLoaders(options),
 		},
 		resolve: buildResolvers(options),

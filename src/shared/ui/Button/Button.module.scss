@@ -68,7 +68,73 @@
     }
 }
 
+.primary {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+        border: none;
+    }
+}
+
+.primary_outline {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+        border: none;
+    }
+}
+
+.secondary {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+        border: none;
+    }
+}
+
+.secondary_outline {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+        border: none;
+    }
+}
+
 .clear {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+        border: none;
+    }
+}
+
+.danger {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+        border: none;
+    }
+}
+
+.danger_outline {
     padding: 0;
     border: none;
     background: none;

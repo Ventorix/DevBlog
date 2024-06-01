@@ -4,5 +4,10 @@
 		["@babel/preset-react", { "runtime": "automatic" }],
 		"@babel/preset-typescript"
 	],
-	"plugins": ["i18next-extract"]
+	"plugins": ["i18next-extract"],
+	"env": {
+		"test": {
+			"plugins": ["@babel/plugin-transform-modules-commonjs"]
+		}
+	}
 }

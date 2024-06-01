@@ -1,9 +1,9 @@
 /* eslint-disable i18next/no-literal-string */
 import { useState } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 
+import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button';
 import * as cls from './Sidebar.module.scss';
 
