@@ -8,7 +8,6 @@ const meta = {
 	title: 'shared/Button',
 	component: Button,
 	parameters: {},
-	tags: ['autodocs'],
 	argTypes: {},
 
 	args: { onClick: fn() },
@@ -41,8 +40,8 @@ export const SecondaryDark: Story = {
 	args: {
 		children: 'Secondary',
 		variant: 'secondary',
-		decorators: [ThemeDecorator(Theme.DARK)],
 	},
+	decorators: [ThemeDecorator(Theme.DARK)],
 };
 export const Clear: Story = {
 	args: {

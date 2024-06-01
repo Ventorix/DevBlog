@@ -7,7 +7,6 @@ const meta = {
 	title: 'pages/AboutPage',
 	component: AboutPage,
 	parameters: {},
-	tags: ['autodocs'],
 	argTypes: {},
 
 	args: {},
@@ -21,6 +20,5 @@ export const Light: Story = {
 };
 export const Dark: Story = {
 	args: {},
-	// @ts-expect-error Storybook bug
 	decorators: [ThemeDecorator(Theme.DARK)],
 };

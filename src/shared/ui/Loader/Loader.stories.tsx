@@ -7,7 +7,6 @@ const meta = {
 	title: 'shared/Loader',
 	component: Loader,
 	parameters: {},
-	tags: ['autodocs'],
 	argTypes: {},
 
 	args: {},

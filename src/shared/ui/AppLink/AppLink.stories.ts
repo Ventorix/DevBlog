@@ -7,33 +7,32 @@ const meta = {
 	title: 'shared/AppLink',
 	component: AppLink,
 	parameters: {},
-	tags: ['autodocs'],
 	argTypes: {},
 
-	args: { to: '/' },
+	args: { to: '/', children: 'Text' },
 } satisfies Meta<typeof AppLink>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-	args: { variant: 'primary', children: 'Text' },
+	args: { variant: 'primary' },
 };
 export const PrimaryDark: Story = {
-	args: { variant: 'primary', children: 'Text' },
+	args: { variant: 'primary' },
 	decorators: [ThemeDecorator(Theme.DARK)],
 };
 export const Secondary: Story = {
-	args: { variant: 'secondary', children: 'Text' },
+	args: { variant: 'secondary' },
 };
 export const SecondaryDark: Story = {
-	args: { variant: 'secondary', children: 'Text' },
+	args: { variant: 'secondary' },
 	decorators: [ThemeDecorator(Theme.DARK)],
 };
 export const Red: Story = {
-	args: { variant: 'red', children: 'Text' },
+	args: { variant: 'red' },
 };
 export const RedDark: Story = {
-	args: { variant: 'red', children: 'Text' },
+	args: { variant: 'red' },
 	decorators: [ThemeDecorator(Theme.DARK)],
 };

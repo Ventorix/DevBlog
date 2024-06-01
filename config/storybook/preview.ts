@@ -27,6 +27,7 @@ const preview: Preview = {
 		RouterDecorator,
 		ErrorBoundaryDecorator,
 	],
+	tags: ['autodocs'],
 };
 
 export default preview;
