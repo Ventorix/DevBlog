@@ -5,7 +5,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button/Button';
 import * as cls from './PageError.module.scss';
 
-function PageError({ error }: FallbackProps) {
+export function PageError({ error }: FallbackProps) {
 	const { theme } = useTheme();
 	const { resetBoundary } = useErrorBoundary();
 	const { t } = useTranslation();
@@ -18,5 +18,3 @@ function PageError({ error }: FallbackProps) {
 		</div>
 	);
 }
-
-export default PageError;
