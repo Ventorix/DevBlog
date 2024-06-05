@@ -25,10 +25,10 @@ jobs:
         run: npm ci
 
       - name: Linting Typescript
-        run: npm lint:ts
+        run: npm run lint:ts
 
       - name: Linting SCSS
-        run: npm lint:scss
+        run: npm run lint:scss
 
   unit-tests:
     needs: [lint]
@@ -60,7 +60,7 @@ jobs:
         run: npm ci
 
       - name: Run Unit tests
-        run: npm test:unit
+        run: npm run test:unit
 
   changed-files:
     needs: [unit-tests]
@@ -72,7 +72,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Get changed files
         id: changed-files
@@ -91,7 +91,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: ⎔ Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
@@ -110,9 +110,6 @@ jobs:
       - name: 📥 Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
-
-      - name: Build Storybook
-        run: npm run storybook:build
 
       - name: ⚡ Run chromatic UI tests
         if: ${{ needs.changed-files.outputs.any_changed == 'true' }}
@@ -151,4 +148,4 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Build production
-        run: npm build:prod
+        run: npm run build:prod
