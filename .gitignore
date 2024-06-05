@@ -30,6 +30,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# Log Files
+*.log
+
+# XML Files
+*.xml
+
 # typescript
 *.tsbuildinfo
 *storybook.log
