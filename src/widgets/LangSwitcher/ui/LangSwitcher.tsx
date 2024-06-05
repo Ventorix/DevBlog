@@ -2,9 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { Button } from 'shared/ui/Button/Button';
 interface LangSwitcherProps {
 	className?: string;
+	short?: boolean;
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
 	const { t, i18n } = useTranslation();
 
 	const toggleLang = async () => {
@@ -12,8 +13,8 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
 	};
 
 	return (
-		<Button className={className} onClick={toggleLang}>
-			{t('Language')}
+		<Button className={className} size='s' onClick={toggleLang}>
+			{short ? t('short_language') : t('language')}
 		</Button>
 	);
 };

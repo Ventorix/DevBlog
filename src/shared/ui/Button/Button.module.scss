@@ -1,50 +1,38 @@
 .Button {
     cursor: pointer;
-    color: var(--text);
-    padding: 6px 16px;
-    border-radius: 6em;
-    display: flex;
-    align-items: center;
-    user-select: none;
     touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-    word-wrap: break-word;
-    list-style: none;
-    position: relative;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    appearance: none;
+    padding: 10px 18px;
+    border-radius: 6px;
     background: none;
+    color: var(--text);
+    border: none;
     box-shadow:
-        rgba(27, 31, 35, 0.04) 0 1px 0,
-        rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+        rgba(50, 50, 93, 0.25) 0 2px 5px -1px,
+        rgba(255, 255, 255, 0.3) 0 1px 3px -1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    user-select: none;
+    transition: all;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
-        border: 2px solid var(--accent);
-        background-color: #f3f4f6;
-        text-decoration: none;
         transition-duration: 0.3s;
+        background-color: var(--bg);
         color: var(--accent);
+        box-shadow: 0 1px 1px var(--accent);
     }
 
     &:disabled {
-        background-color: #fafbfc;
-        border-color: rgba(27, 31, 35, 0.15);
-        color: #959da5;
-        cursor: defaul;
+        opacity: 50%;
+        cursor: not-allowed;
     }
 
     &:active {
-        background-color: #edeff2;
-        box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
-        transition: none 0s;
-    }
-
-    &:focus {
-        outline: 1px transparent;
+        filter: brightness(95%);
     }
 
     &:before {
@@ -53,6 +41,12 @@
 
     &:-webkit-details-marker {
         display: none;
+    }
+}
+
+.primary {
+    &:hover {
+        background-color: var(--light-bg);
     }
 
     &.normal {
@@ -68,100 +62,8 @@
     }
 }
 
-.primary {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-
-    &:hover {
-        border: none;
-    }
-}
-
-.primary_outline {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-
-    &:hover {
-        border: none;
-    }
-}
-
-.secondary {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-
-    &:hover {
-        border: none;
-    }
-}
-
-.secondary_outline {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-
-    &:hover {
-        border: none;
-    }
-}
-
-.clear {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-
-    &:hover {
-        border: none;
-    }
-}
-
-.danger {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-
-    &:hover {
-        border: none;
-    }
-}
-
-.danger_outline {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-
-    &:hover {
-        border: none;
-    }
-}
-
-.square {
-    padding: 0;
-}
-
-.square.size_m {
-    width: var(--font-line-m);
-    height: var(--font-line-m);
-}
-
-.square.size_l {
-    width: var(--font-line-l);
-    height: var(--font-line-l);
-}
-
-.square.size_xl {
-    width: var(--font-line-xl);
-    height: var(--font-line-xl);
+.s {
+    font: var(--font-s);
 }
 
 .m {

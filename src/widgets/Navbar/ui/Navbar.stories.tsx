@@ -8,7 +8,6 @@ const meta = {
 	component: Navbar,
 	parameters: {},
 	argTypes: {},
-
 	args: {},
 } satisfies Meta<typeof Navbar>;
 

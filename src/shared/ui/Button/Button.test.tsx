@@ -9,8 +9,8 @@ describe('button', () => {
 	});
 	test('test variant prop', () => {
 		const textInsideButton = 'Test variant';
-		render(<Button variant='clear'>{textInsideButton}</Button>);
-		expect(screen.getByText(textInsideButton)).toHaveClass('clear');
+		render(<Button variant='primary'>{textInsideButton}</Button>);
+		expect(screen.getByText(textInsideButton)).toHaveClass('primary');
 		screen.debug();
 	});
 });

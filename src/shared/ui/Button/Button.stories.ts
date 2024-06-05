@@ -30,22 +30,22 @@ export const PrimaryDark: Story = {
 	decorators: [ThemeDecorator(Theme.DARK)],
 };
 
-export const Secondary: Story = {
-	args: {
-		children: 'Secondary',
-		variant: 'secondary',
-	},
-};
-export const SecondaryDark: Story = {
-	args: {
-		children: 'Secondary',
-		variant: 'secondary',
-	},
-	decorators: [ThemeDecorator(Theme.DARK)],
-};
-export const Clear: Story = {
-	args: {
-		children: 'Clear',
-		variant: 'clear',
-	},
-};
+// export const Secondary: Story = {
+// 	args: {
+// 		children: 'Secondary',
+// 		variant: 'secondary',
+// 	},
+// };
+// export const SecondaryDark: Story = {
+// 	args: {
+// 		children: 'Secondary',
+// 		variant: 'secondary',
+// 	},
+// 	decorators: [ThemeDecorator(Theme.DARK)],
+// };
+// export const Clear: Story = {
+// 	args: {
+// 		children: 'Clear',
+// 		variant: 'clear',
+// 	},
+// };

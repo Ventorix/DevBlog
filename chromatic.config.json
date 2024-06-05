@@ -1,0 +1,7 @@
+{
+	"onlyChanged": true,
+	"projectId": "Project:6653761c9ffec149b7986611",
+	"storybookConfigDir": "config\\storybook",
+	"externals": ["public/**"],
+	"junitReport": true
+}

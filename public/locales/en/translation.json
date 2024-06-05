@@ -1,10 +1,11 @@
 {
-  "Language": "English",
-  "Test Example": "Test Example",
-  "Translate": "Translate",
-  "page-not-found": "Page not found",
-  "Something went wrong": "Something went wrong",
-  "Try again": "Try again",
-  "Main": "Main",
-  "About": "About us"
+	"About": "About us",
+	"language": "English",
+	"short_language": "EN",
+	"Main": "Main",
+	"Something went wrong": "Something went wrong",
+	"Test Example": "Test Example",
+	"Translate": "Translate",
+	"Try again": "Try again",
+	"page-not-found": "Page not found"
 }

@@ -2,16 +2,9 @@ import { ButtonHTMLAttributes, memo, ReactNode } from 'react';
 import { classNames, Mods } from '../../lib/classNames/classNames';
 import * as cls from './Button.module.scss';
 
-export type ButtonVariant =
-	| 'primary'
-	| 'primary_outline'
-	| 'secondary'
-	| 'secondary_outline'
-	| 'danger'
-	| 'danger_outline'
-	| 'clear';
+export type ButtonVariant = 'primary';
 
-export type ButtonSize = 'm' | 'l' | 'xl';
+export type ButtonSize = 's' | 'm' | 'l' | 'xl';
 
 export type ButtonColor = 'normal' | 'success' | 'error';
 
@@ -30,8 +23,7 @@ export const Button = memo((props: ButtonProps) => {
 	const {
 		className,
 		children,
-		variant = 'clear',
-		square,
+		variant = 'primary',
 		disabled,
 		fullWidth,
 		size = 'm',
@@ -39,7 +31,6 @@ export const Button = memo((props: ButtonProps) => {
 	} = props;
 
 	const mods: Mods = {
-		[cls.square]: square,
 		[cls.disabled]: disabled,
 		[cls.fullWidth]: fullWidth,
 	};

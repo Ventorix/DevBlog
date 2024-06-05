@@ -1,10 +1,11 @@
 {
-  "Language": "Русский",
-  "Test Example": "Тестовый пример",
-  "Translate": "Перевод",
-  "page-not-found": "Страница не найдена",
-  "Something went wrong": "Произошла ошибка",
-  "Try again": "Обновить страницу",
-  "Main": "Главная",
-  "About": "О сайте"
+	"About": "О сайте",
+	"language": "Русский",
+	"short_language": "RU",
+	"Main": "Главная",
+	"Something went wrong": "Произошла ошибка",
+	"Test Example": "Тестовый пример",
+	"Translate": "Перевод",
+	"Try again": "Обновить страницу",
+	"page-not-found": "Страница не найдена"
 }
