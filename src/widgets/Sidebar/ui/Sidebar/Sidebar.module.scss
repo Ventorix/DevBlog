@@ -62,7 +62,9 @@
 
 .item {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    padding: 6px 12px;
     width: 200px;
     height: 40px;
     gap: 15px;
@@ -85,14 +87,14 @@
 
 .link {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     gap: 1em;
 }
 
 .title {
-    font-size: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .collapsed {
@@ -120,6 +122,10 @@
 
     .item {
         width: 100%;
+    }
+
+    .link {
+        justify-content: center;
     }
 
     .switchersBlock {

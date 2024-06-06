@@ -35,7 +35,6 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x]
-        shard: [1, 2, 3]
 
     steps:
       - uses: actions/checkout@v4
@@ -51,7 +50,7 @@ jobs:
         run: npm ci
 
       - name: Run Unit tests
-        run: npm run test:unit -- --max-workers=2 -passWithNoTests --shard=${{ matrix.shard }}/${{ strategy.job-total }}
+        run: npm run test:unit
 
   changed-files:
     needs: [unit-tests]

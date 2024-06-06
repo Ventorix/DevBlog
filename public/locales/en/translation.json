@@ -1,11 +1,12 @@
 {
-	"About": "About us",
-	"language": "English",
-	"short_language": "EN",
-	"Main": "Main",
-	"Something went wrong": "Something went wrong",
-	"Test Example": "Test Example",
-	"Translate": "Translate",
-	"Try again": "Try again",
-	"page-not-found": "Page not found"
+  "About": "About us",
+  "Main": "Main",
+  "Something went wrong": "Something went wrong",
+  "Test Example": "Test Example",
+  "Translate": "Translate",
+  "Try again": "Try again",
+  "language": "English",
+  "navbar_sign_in": "Sign In",
+  "page-not-found": "Page not found",
+  "short_language": "EN"
 }

@@ -1,11 +1,12 @@
 {
-	"About": "О сайте",
-	"language": "Русский",
-	"short_language": "RU",
-	"Main": "Главная",
-	"Something went wrong": "Произошла ошибка",
-	"Test Example": "Тестовый пример",
-	"Translate": "Перевод",
-	"Try again": "Обновить страницу",
-	"page-not-found": "Страница не найдена"
+  "About": "О сайте",
+  "Main": "Главная",
+  "Something went wrong": "Произошла ошибка",
+  "Test Example": "Тестовый пример",
+  "Translate": "Перевод",
+  "Try again": "Обновить страницу",
+  "language": "Русский",
+  "navbar_sign_in": "Войти",
+  "page-not-found": "Страница не найдена",
+  "short_language": "RU"
 }

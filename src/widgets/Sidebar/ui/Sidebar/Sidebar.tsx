@@ -29,13 +29,13 @@ export const Sidebar = ({ className }: SidebarProps) => {
 			<div className={cls.items}>
 				<div className={cls.item}>
 					<AppLink className={cls.link} to={'/'}>
-						<HomeIcon width={20} height={20} />
+						<HomeIcon width={24} height={24} />
 						<span className={`${cls.title} ${collapsed ? cls.hide : ''}`}>{t('Main')}</span>
 					</AppLink>
 				</div>
 				<div className={cls.item}>
 					<AppLink className={cls.link} to={RoutePath.about}>
-						<NotebookIcon width={20} height={20} />
+						<NotebookIcon width={24} height={24} />
 						<span className={`${cls.title} ${collapsed ? cls.hide : ''}`}>{t('About')}</span>
 					</AppLink>
 				</div>
@@ -44,9 +44,9 @@ export const Sidebar = ({ className }: SidebarProps) => {
 				<Button
 					data-testid='sidebar-toggle'
 					variant='primary'
+					size='size-m'
 					onClick={onToggle}
-					className={cls.collapseBtn}
-					size='l'>
+					className={cls.collapseBtn}>
 					{collapsed ? <ArrowRightIcon /> : <ArrowLeftIcon />}
 				</Button>
 				<div className={cls.switchers}>

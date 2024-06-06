@@ -12,9 +12,9 @@
 		"lint:scss": "npx stylelint \"**/*.{css,scss}\"",
 		"lint::scss:fix": "npx stylelint \"**/*.{css,scss}\" --fix",
 		"test:unit": "jest --config ./config/jest/jest.config.ts",
-		"test-ui": "npx chromatic --build-script-name storybook:build",
-		"storybook": "storybook dev -p 6006 -c ./config/storybook",
-		"storybook:build": "storybook build -c ./config/storybook"
+		"test-ui": "npx chromatic",
+		"storybook": "storybook dev -p 6006 -c ./config/storybook ",
+		"build-storybook": "storybook build -c ./config/storybook"
 	},
 	"author": "",
 	"license": "ISC",
@@ -59,6 +59,7 @@
 		"eslint-plugin-i18next": "^6.0.3",
 		"eslint-plugin-jest-dom": "^5.4.0",
 		"eslint-plugin-react": "^7.34.1",
+		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-storybook": "^0.8.0",
 		"file-loader": "^6.2.0",
 		"globals": "^15.3.0",

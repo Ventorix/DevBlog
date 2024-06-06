@@ -2,13 +2,9 @@
   width: 100%;
   height: var(--navbar-height);
   background: var(--light-bg);
-  padding: 16px;
-}
-
-.links {
+  padding: 0 16px;
   display: flex;
-  justify-content: right;
-  width: 100%;
+  justify-content: end;
+  align-items: center;
   gap: 20px;
 }
-
