@@ -2,9 +2,11 @@
     height: calc(100vh - var(--navbar-height));
     padding: 12px;
     width: var(--sidebar-width);
-    background: var(--light-bg);
+    background-color: var(--light-bg);
     border-radius: 0 24px 24px 0;
-    transition: width 0.3s;
+    transition:
+        width 0.3s,
+        var(--theme-toggle-transition);
     display: flex;
     justify-content: space-between;
     flex-direction: column;

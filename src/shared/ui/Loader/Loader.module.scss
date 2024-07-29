@@ -1,49 +1,44 @@
 .loader {
-  width: 85px;
-  height: 50px;
+  --s: 64px;
+  --g: var(--hint) 90%, #0000;
 
-  --g1: conic-gradient(from 90deg at left 3px top 3px, #0000 90deg, var(--text) 0);
-  --g2: conic-gradient(from -90deg at bottom 3px right 3px, #0000 90deg, var(--text) 0);
-
-  background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
-  background-position: left, center, right;
+  width: var(--s);
+  aspect-ratio: 2;
+  background:
+    radial-gradient(farthest-side, var(--g)) 0 50%/25% 50%,
+    radial-gradient(farthest-side at bottom, var(--g)) 50% calc(50% - var(--s) / 16) / 25% 25%,
+    radial-gradient(farthest-side at top, var(--g)) 50% calc(50% + var(--s) / 16) / 25% 25%,
+    radial-gradient(farthest-side at bottom, var(--g)) 100% calc(50% - var(--s) / 16) / 25% 25%,
+    radial-gradient(farthest-side at top, var(--g)) 100% calc(50% + var(--s) / 16) / 25% 25%;
   background-repeat: no-repeat;
-  animation: l9 1s infinite;
+  animation: l14 1s infinite;
 }
-
-@keyframes l9 {
-  0% {
-    background-size:
-      25px 50%,
-      25px 50%,
-      25px 50%;
-  }
-
+@keyframes l14 {
   25% {
-    background-size:
-      25px 100%,
-      25px 50%,
-      25px 50%;
+    background-position:
+      0 50%,
+      50% 0,
+      50% 100%,
+      100% 0,
+      100% 100%;
   }
 
   50% {
-    background-size:
-      25px 50%,
-      25px 100%,
-      25px 50%;
+    background-position:
+      100% 50%,
+      0 0,
+      0 100%,
+      50% 0,
+      50% 100%;
   }
 
-  75% {
-    background-size:
-      25px 50%,
-      25px 50%,
-      25px 100%;
-  }
-
+  75%,
   100% {
-    background-size:
-      25px 50%,
-      25px 50%,
-      25px 50%;
+    background-position:
+      100% 50%,
+      0 calc(50% - var(--s) / 16),
+      0 calc(50% + var(--s) / 16),
+      50% calc(50% - var(--s) / 16),
+      50% calc(50% + var(--s) / 16);
   }
 }
