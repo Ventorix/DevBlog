@@ -1,3 +1,6 @@
 {
-	"page": "О сайте"
+  "page": "О сайте",
+  "translation": {
+    "login_form_sign_up": "Зарегистироваться"
+  }
 }

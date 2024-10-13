@@ -6,6 +6,9 @@
   "Translate": "Перевод",
   "Try again": "Обновить страницу",
   "language": "Русский",
+  "login_form_sign_in": "Войти",
+  "login_form_sign_up": "Зарегистрироваться",
+  "login_form_text": "Текст",
   "navbar_sign_in": "Войти",
   "page-not-found": "Страница не найдена",
   "short_language": "RU"

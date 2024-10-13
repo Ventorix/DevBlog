@@ -1,4 +1,6 @@
 {
-  "navbar_sign_in": "",
-  "page": "Main page"
+  "navbar_sign_in": "Sign In",
+  "page": "Main page",
+  "translation": {
+  }
 }

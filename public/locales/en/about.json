@@ -1,3 +1,6 @@
 {
-	"page": "About us"
+  "page": "About us",
+  "translation": {
+    "login_form_sign_up": "Sign Up"
+  }
 }

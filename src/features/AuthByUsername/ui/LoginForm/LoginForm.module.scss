@@ -1,0 +1,21 @@
+.LoginForm {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.input {
+  color: black;
+}
+
+.LoginButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7em;
+}

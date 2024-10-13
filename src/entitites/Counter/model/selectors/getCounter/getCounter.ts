@@ -1,3 +1,6 @@
 import { StateSchema } from 'app/providers/StoreProvider';
+import { DeepPartial } from 'shared/lib/types/DeepPartial';
 
-export const getCounter = (state: StateSchema) => state.counter;
+export function getCounter(state: DeepPartial<StateSchema>): { value?: number } {
+	return state.counter ?? { value: undefined };
+}
